@@ -265,35 +265,15 @@
   <p class="launch">Launching September 2026</p>
 
   <div class="form-wrap">
+   <form action="https://app.kit.com/forms/9443131/subscriptions" method="post" target="_blank">
   <p class="offer">Founding Members Lock In Their Rate For Life</p>
-    <div class="form-row">
-      <input type="email" placeholder="Email address" id="emailInput" />
-      <button onclick="handleSubmit()">Join the list</button>
-    </div>
-    <p class="form-note" id="formNote">Get The First access · Founding Member Lifetime discount</p>
-    <p class="success-msg" id="successMsg">You're on the list. We'll be in touch.</p>
+  <div class="form-row">
+    <input type="email" name="email_address" placeholder="Email address" required />
+    <button type="submit">Join the list</button>
   </div>
-
+  <p class="form-note">First access · Founding member lifetime discount</p>
+</form>
 </div>
-
-<script>
-  function handleSubmit() {
-    const input = document.getElementById('emailInput');
-    const msg = document.getElementById('successMsg');
-    const formRow = input.closest('.form-row');
-    const note = document.getElementById('formNote');
-
-    if (!input.value || !input.value.includes('@')) {
-      formRow.style.borderColor = '#c0392b';
-      setTimeout(() => formRow.style.borderColor = '', 1500);
-      return;
-    }
-
-    formRow.style.display = 'none';
-    note.style.display = 'none';
-    msg.style.display = 'block';
-  }
-</script>
-
+ 
 </body>
 </html>
